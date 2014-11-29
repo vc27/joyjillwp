@@ -9,6 +9,6 @@
 $gallery_of_photos = get_field('_gallery_of_photos');
 echo "<div class=\"block-single-gallery\">";
 foreach ( $gallery_of_photos as $image ) {
-	echo "<a target=\"_blank\" title=\"" . $image['title'] . "\" rel=\"gallery\" href=\"" . $image['url'] . "\" style=\"background-image:url('" . $image['sizes']['medium'] . "');\"></a>";
+	echo "<a target=\"_blank\" title=\"" . $image['title'] . "\" rel=\"gallery\" href=\"" . ACFWP::return_image( $image, 'large-ex' ) . "\" style=\"background-image:url('" . ACFWP::return_image( $image, 'medium' ) . "');\"></a>";
 }
 echo "</div>";

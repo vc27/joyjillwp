@@ -13,7 +13,12 @@
 		if ( have_rows('_footer_advertisement','option') ) {
 			while ( have_rows('_footer_advertisement','option') ) {
 				the_row();
-				echo "<a href=\"" . get_sub_field('_ad_url') . "\"><img src=\"" . ACFWP::return_image( get_sub_field('_ad_image'), 'large' ) . "\" alt=\"\" /></a>";
+				$a_ = '<span>'; $_a = '</span>';
+				if ( get_sub_field('_ad_url') ) {
+					$a_ = "<a href=\"" . get_sub_field('_ad_url') . "\">";
+					$_a = "</a>";
+				}
+				echo "$a_<img src=\"" . ACFWP::return_image( get_sub_field('_ad_image'), 'large' ) . "\" alt=\"\" />$_a";
 			}
 		}
 		?>

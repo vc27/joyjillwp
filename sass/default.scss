@@ -267,7 +267,7 @@ input[type="submit"]:hover,input[type="button"]:hover, button:hover {
 
 #section-header {
 	.inner-wrap {
-		padding-bottom:15px; border-bottom:solid 1px $gray-a; margin-bottom:45px;
+		padding-bottom:15px; border-bottom:solid 1px $gray-a; margin-bottom:30px;
 	}
 	#logo {
 		display:block; width:494px; height:147px; margin:0 auto; padding:45px 0; 
@@ -322,7 +322,7 @@ body.archive {
 .block-single-gallery {
 	line-height:0; text-align:center; 
 	a {
-		display:inline-block; width:230px; height:230px; line-height:0;
+		display:inline-block; width:180px; height:180px; line-height:0;
 		margin:5px 5px 0 0; @include box-shadow(0 1px 2px rgba(0,0,0,0.3));
 		@include background-cover(); position:relative;
 	}
@@ -345,6 +345,7 @@ body.archive {
 	.inner-wrap {
 		@include border-top();
 	}
+	span,
 	a { 
 		display:block; line-height:0; margin-bottom:15px;
 		img { max-width:100%; height:auto; @include box-shadow(0 1px 2px rgba(0,0,0,0.3)); }
